@@ -1,0 +1,86 @@
+h1, p {
+	font-family: 'Libre Barcode 128 Text', cursive;
+    text-align: center;
+}
+
+p{
+    font-size:50px;
+    color: teal;
+}
+
+h1{
+	font-size: 35px;
+	color: #ff6666;
+}
+
+p1{
+    font-family: 'Thasadith', sans-serif;
+	font-size:15px;
+    color: gray;
+}
+
+.blue{
+	font-size: 20px;
+	color: blue;
+}
+
+.container1{
+	position: relative;
+	left: 250px;
+	bottom: -25px;
+}
+
+.container2{
+	position: relative;
+	left: 200px;
+}
+
+.container3{
+	position: relative;
+	left: 70px;
+	top: -50px;
+}
+
+.container4{
+	position: relative;
+	left: 145px;
+	top: -85px;
+}
+
+.container5{
+	position: relative;
+	bottom: 280px;
+	right: -930px;
+}
+
+.container6{
+	position: relative;
+	top: -275px;
+	left: 1000px;
+}
+
+.container7{
+    position: relative;
+	top: -375px;
+	left: 1080px;
+}
+
+.container8{
+    position: relative;
+	bottom: 340px;
+	left: 1080px;
+}
+
+.container9{
+	position: relative;
+	bottom: -100px;
+}
+
+
+html{
+	background: url(../img/bubbleteabackground.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
