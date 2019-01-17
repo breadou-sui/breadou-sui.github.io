@@ -76,6 +76,10 @@ p1{
 	bottom: -100px;
 }
 
+.container10{
+    position: relative;
+	bottom: -100px;
+}
 
 html{
 	background: url(../img/bubbleteabackground.gif) no-repeat center center fixed; 
