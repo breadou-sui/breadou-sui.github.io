@@ -1,82 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- This is a comment. -->
-        <title>Annie's Website</title>
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
-    </head>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Annie's Animations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/helpers.js"></script>
 
-    <body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="./js/index.js"></script>
+</head>
+<body>
+<!-- 	<button id="trigger">Click me hehehe</button>
+	<p id="demo"></p> -->
+	
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-md">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main-navigation">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Movement</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Looping</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Speed</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    	<div>
-    	    <p>hello there! welcome to annie's website</p>
-            <h1>click on an animation for some top food spots</h1>
-            <!-- <IMG SRC="bubbletea2.gif"> -->
-<!--             <IMG SRC="tea.gif">
- -->
-            <!-- <p1>it's  f a k e</p1>
-            <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet"> -->
-        </div>
+<!-- Homepage -->
+    <div id = "homepage" href="#home">
+    	<h1 id="title"> Annie-mation Categories</h1>
+    	<h3 id="subtitle"> Lydia Chilton, Annie Sui</h3>
+    	<table id="table">
+    		<tr>
+    			<th><h2><button class="button">Movement</button></h2></th>
+    			<th><h2><button class="button">Looping</button></h2></th>
+    			<th><h2><button class="button">Speed</button></h2></th>
+    		</tr>
+    		<tr>
+    			<td><center><button class="animatedbutton"><img src="img/ibm-final.gif" img style='width: 20vw'></button></center></td>
+    			<td><center><button class="animatedbutton"><img src="img/lego-plane-final.gif" img style='width: 20vw'></button></center></td>
+    			<td><center><button class="animatedbutton"><img src="img/mcdonalds-hook-final.gif" img style='width: 20vw'></button></center></td>
+    		</tr>
+    	</table>
+    </div>
 
-        <div class= "container1">
-
-            <a href="http://fayda.com/">
-                <IMG SRC="./img/chatbox.gif" height="40" width="120">
-            </a>
-        </div>
-
-        <div class= "container2">
-            <a href="https://www.spotdessertbar.com/">
-                <IMG SRC="./img/catbread.gif">
-            </a>
-        </div>
-
-        <div class= "container3">
-            <a href="http://famousfamiglia.com/">
-                <IMG SRC="./img/pizza.gif" height="80" width="70">
-            </a>
-        </div>
-
-        <div class= "container4">
-            <a href="https://marthascountrybakery.com/">
-                <IMG SRC="./img/cake.gif" height="80" width="80">
-            </a>
-        </div>
-
-        <div class= "container5">
-            <a href="https://www.pocky.com/">
-                <IMG SRC="./img/pocky.gif" height="80" width="70">
-            </a>
-        </div>
-
-        <div class= "container6">
-            <a href="https://www.ihop.com/en/menu">
-                <IMG SRC="./img/pancakes.gif" height="65" width="55">
-            </a>
-        </div>
-
-         <div class= "container7">
-            <a href="https://taiyakinyc.com/">
-                <IMG SRC="./img/icecream.gif" height="65" width="80">
-            </a>
-        </div>
-
-        <div class= "container8">
-            <a href="http://tottoramen.com/">
-                <IMG SRC="./img/ramen.gif" height="65" width="80">
-            </a>
-        </div>
-
-        <div class= "container9">
-            <IMG SRC="./img/grumpycat.gif" height="170" width="155">
-        </div>
-
-        <div class= "container10">
-            <IMG SRC="./img/tengohambre.png" height="20" width="20">
-        </div>
-
-    </body>
+  
+</body>
 </html>
