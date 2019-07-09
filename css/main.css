@@ -29,6 +29,12 @@ body {
 	font-size: 5vw;
 	padding-top: 100px;
 }
+#movement-title{
+	text-align:center;
+	font-size: 4vw;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
 #subtitle{
 	text-align: center;
 	font-size: 80%;
@@ -52,10 +58,37 @@ body {
 .button:hover {
 	background-color: #81bdc1;
 }
+
+.movement-button{
+	background-color: #bcdee0;
+	border: none;
+	text-align: center;
+	font-size: 20px;
+	height: 40px;
+	width: 140px;
+	padding: 5px 20px;
+	display: flex;
+	justify-content: space-around;
+	/*display: block;*/
+	/*margin: 30px 90px;*/
+	transition: 0.3s;
+}
+
+.movement-button:hover {
+	background-color: #81bdc1;
+}
+
 .animatedbutton{
+	border: none;
+	transition: 0.3s;
+}
+
+.movement-animatedbutton{
 	border: none;
 	transition: 0.3s;
 }
 /*.animatedbutton:hover{
 	filter: brightness(50%);
 }*/
+
+
