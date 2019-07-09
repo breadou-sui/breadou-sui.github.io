@@ -70,7 +70,7 @@ body {
 	display: flex;
 	justify-content: space-around;
 	/*display: block;*/
-	/*margin: 30px 90px;*/
+	margin: 30px;
 	transition: 0.3s;
 }
 
