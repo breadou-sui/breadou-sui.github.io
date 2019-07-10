@@ -33,7 +33,7 @@ body {
 	text-align:center;
 	font-size: 4vw;
 	padding-top: 50px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 #subtitle{
 	text-align: center;
@@ -51,7 +51,9 @@ body {
 	height: 40px;
 	width: 140px;
 	padding: 5px 15px;
-	display: block;
+	display: flex;
+	justify-content: space-around;
+	/*display: block;*/
 	margin: 30px 90px;
 	transition: 0.3s;
 }
