@@ -29,7 +29,7 @@ body {
 	font-size: 5vw;
 	padding-top: 100px;
 }
-#movement-title{
+#subpage-title{
 	text-align:center;
 	font-size: 4vw;
 	padding-top: 50px;
@@ -91,5 +91,27 @@ body {
 	border: none;
 }
 
+/*Linear Page Images*/
 
+/*.row{
+	display: flex;
+	justify-content: space-between;
+}
+
+.col-sm{
+	vertical-align: middle;
+}
+
+.col-sm img{
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}*/
+
+.col-sm{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: 10px solid black;*/
+}
 
