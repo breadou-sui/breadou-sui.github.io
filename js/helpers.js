@@ -1,12 +1,12 @@
 
 $(document).ready(function(){
-	// $("#trigger").click(function(){
-	// $("#demo").html("Hello world");
-	// })
-	console.log("document ready");
-	loadHome();
+	$("#trigger").click(function(){
+	$("#demo").append(" nothing much");
+	})
+	console.log("Document is ready");
+	// loadHome();
 });
 
-var loadHome = function(){
+// var loadHome = function(){
 	
-}
+// }
