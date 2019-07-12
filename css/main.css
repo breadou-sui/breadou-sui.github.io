@@ -78,16 +78,17 @@ body {
 
 .movement-button:hover {
 	background-color: #81bdc1;
+	justify-content: space-around;
 }
 
 .animatedbutton{
 	border: none;
-	transition: 0.3s;
+	justify-content: space-around;
 }
 
 .movement-animatedbutton{
+	justify-content: space-around;
 	border: none;
-	transition: 0.3s;
 }
 /*.animatedbutton:hover{
 	filter: brightness(50%);
