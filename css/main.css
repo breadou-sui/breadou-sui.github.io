@@ -93,20 +93,20 @@ body {
 
 /*Linear Page Images*/
 
-/*.row{
+.row{
 	display: flex;
 	justify-content: space-between;
 }
 
-.col-sm{
+/*.col-sm{
 	vertical-align: middle;
-}
+}*/
 
 .col-sm img{
 	margin-top: 8px;
 	vertical-align: middle;
 	width: 100%;
-}*/
+}
 
 .col-sm{
 	display: flex;

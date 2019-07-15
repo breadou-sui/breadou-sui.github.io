@@ -1,5 +1,6 @@
+var data = {
 
 
-$(document).ready(function(){
-	loadHome();
-})
+
+
+}
