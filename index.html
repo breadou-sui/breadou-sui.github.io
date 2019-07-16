@@ -8,48 +8,82 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="js/data.js"></script>
 
 </head>
-<body>
 
-  <!-- TESTING JAVASCRIPT -->
-<!-- 	<button id="trigger">Click me hehehe</button>
-	<p id="demo">What's Up</p> -->
-	
+<body style=""> 
+  <div class="container"> 
+    <div class="page-header">
+      <h1 id="header"></h1> 
+      <h2 id="counter"></h2>
+    </div>
+  </div>
+
 	<!-- Navigation Bar -->
-	<nav class="navbar navbar-expand-md">
-  <a class="navbar-brand" href="#" onClick=loadHome()>Home</a>
-  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+	<nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid">
+  <a class="navbar-brand" href="#" onclick="loadHome()">Home</a>
+  <button class="navbar-toggler navbar-dark" id="toggle" type="button" data-toggle="collapse" data-target="#main-navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="main-navigation">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="movement.html">Movement</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movement</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" onclick="setActiveLinear('Linear')">Linear</a> 
+          <a class="dropdown-item" href="#">Spin</a>
+          <a class="dropdown-item" href="#">Sequential</a>
+          <a class="dropdown-item" href="#">Gradient</a>
+          <a class="dropdown-item" href="#">Expand</a>
+        </div> 
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Looping</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Looping</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Infinite Movement</a> 
+          <a class="dropdown-item" href="#">Exit the Frame</a>
+          <a class="dropdown-item" href="#">Fade</a>
+          <a class="dropdown-item" href="#">Return to Position</a>
+        </div> 
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Speed</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Speed</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Uniform</a> 
+          <a class="dropdown-item" href="#">Accelerate</a>
+          <a class="dropdown-item" href="#">Pause</a>
+        </div> 
       </li>
+
     </ul>
   </div>
+</div>
 </nav>
 
+<div id="parent"></div> 
+  <div class="container">
+    <!-- <div id="items_list">
+    </div> -->
+  </div>
+
 <!-- Homepage -->
-    <div id = "homepage" href="#home">
+    <div id = "homepage" href="#" style="visibility: visible;">
     	<h1 id="title"> Annie-mation Categories</h1>
     	<h3 id="subtitle"> Lydia Chilton, Annie Sui</h3>
     	<table id="table">
     		<tr>
-    			<th><h2><button class="button" onclick="location.href='movement.html'">Movement</button></h2></th>
+    			<th><h2><button class="button" onclick="location.href=#home">Movement</button></h2></th>
     			<th><h2><button class="button">Looping</button></h2></th>
     			<th><h2><button class="button">Speed</button></h2></th>
     		</tr>
     		<tr>
-    			<td><center><button class="animatedbutton"><img src="img/ibm-final.gif" img style='width: 20vw'></button></center></td>
+    			<td><center><button class="animatedbutton""><img src="img/ibm-final.gif" img style='width: 20vw'></button></center></td>
     			<td><center><button class="animatedbutton"><img src="img/lego-plane-final.gif" img style='width: 20vw'></button></center></td>
     			<td><center><button class="animatedbutton"><img src="img/mcdonalds-hook-final.gif" img style='width: 20vw'></button></center></td>
     		</tr>
