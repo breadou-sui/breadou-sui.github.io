@@ -85,6 +85,8 @@ body {
 	text-align: center;
 }
 
+/*Create 5 columns in Bootstrap grid.*/
+
 .col-md-5ths{
 	position: relative;
 	min-height: 1px;

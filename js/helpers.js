@@ -637,6 +637,7 @@ var changeCount = function(){
 var changeHeader = function(name){
 	$("#homepage").hide(); // Hides homepage.
 	$("#movement-page").hide(); // Hides movement page.
+	$("#looping-page").hide(); // Hides looping page.
 	$("#parent").html(""); // Reset parent div.
 	$("#header").empty();
 	$("#header").append(name);
@@ -648,12 +649,21 @@ var loadHome = function(){
 	$("#header").empty();
 	$("#counter").empty();
 	$("#movement-page").hide();
+	$("#looping-page").hide();
 	$("#homepage").show();
 }
 
 // Loads movement page. 
 function loadMovement(){
 	$("#homepage").hide();
+	$("#looping-page").hide();
 	$("#movement-page")[0].style.display = "block";
-	console.log("im here");
+	// console.log("im here");
+}
+
+function loadLooping(){
+	$("#homepage").hide();
+	$("#movement-page").hide();
+	$("#looping-page")[0].style.display = "block";
+	// console.log("im here");
 }

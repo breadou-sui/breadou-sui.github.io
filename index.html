@@ -82,7 +82,7 @@
           <center><img src="img/ibm-final.gif" img style='width: 80%'></center>
         </div>
         <div class="col-md-4">
-          <center><button class="button">Looping</button></center>
+          <center><button class="button" onclick="loadLooping()">Looping</button></center>
           <center><img src="img/lego-plane-final.gif" img style='width: 80%'></center>
         </div>
         <div class="col-md-4">
@@ -96,7 +96,7 @@
     <!-- Movement Page -->
     <div id = "movement-page" href="#" style="display: none">
       <h1 id="title">Movement</h1>
-      <h3 id="subtitle"> Click on a movement category below! </h3>
+      <h3 id="subtitle">Click on a movement category below!</h3>
       
       <div class="container">
       <div class="row">
@@ -122,8 +122,33 @@
         </div>
       </div>
     </div>
-    </div>
+    </div> 
 
+<!-- Looping Page -->
+    <div id = "looping-page" href="#" style="display: none">
+      <h1 id="title"> Looping</h1>
+      <h3 id="subtitle">Click on a looping category below!</h3>
+
+      <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <center><button class="button" onclick="setActiveInfinite('Infinite')">Infinite</button></center>
+          <center><img src="img/ibm-final.gif" img style='width: 80%'></center>
+        </div>
+        <div class="col-md-3">
+          <center><button class="button" onclick="setActiveExit('Exit')">Exit</button></center>
+          <center><img src="img/mcdonalds-easter-final.gif" img style='width: 80%'></center>
+        </div>
+        <div class="col-md-3">
+          <center><button class="button" onclick="setActiveFade('Fade')">Fade</button></center>
+          <center><img src="img/gillette-shaving-final.gif" img style='width: 80%'></center>
+        </div>
+        <div class="col-md-3">
+          <center><button class="button" onclick="setActiveReturn('Return')">Return</button></center>
+          <center><img src="img/heinz-onion-rings-final.gif" img style='width: 80%'></center>
+        </div>
+      </div>
+    </div>
     </div>
 
 <script type="text/javascript" src="js/helpers.js"></script>  
