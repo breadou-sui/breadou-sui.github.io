@@ -14,7 +14,8 @@ var data = {
 		id: "Condom Action",
 		image_src: "img/condom-action-final.gif",
 		movement: ["linear"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["accelerated"]
 	},
 
 	"id3":{
@@ -22,7 +23,8 @@ var data = {
 		id: "Dove Love",
 		image_src: "img/dove-love-final.gif",
 		movement: ["spin"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["accelerated"]
 	},
 
 	"id4":{
@@ -82,7 +84,8 @@ var data = {
 		id: "Heinz Onion Rings",
 		image_src: "img/heinz-onion-rings-final.gif",
 		movement: ["linear"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["accelerated"]
 	},
 
 	"id11":{
@@ -117,14 +120,16 @@ var data = {
 		id: "KFC Opening",
 		image_src: "img/KFC-opening-soon-wiggle-final.gif",
 		movement: ["linear"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["accelerated"]
 	}, 
 
 	"id15":{
 		num: "Image 15: ",
 		id: "Kiwi Battery",
 		image_src: "img/kiwi-battery-final.gif",
-		movement: ["sequential"]
+		movement: ["sequential"],
+		speed: ["paused"]
 	}, 
 
 	"id16":{
@@ -141,7 +146,8 @@ var data = {
 		id: "Lipton Tea Sunrise",
 		image_src: "img/lipton-sunset-final.gif",
 		movement: ["linear", "gradient"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["accelerated"]
 	}, 
 
 	"id18":{
@@ -149,7 +155,8 @@ var data = {
 		id: "McDonalds Easter",
 		image_src: "img/mcdonalds-easter-final.gif",
 		movement: ["linear"],
-		looping: ["exit"]
+		looping: ["exit"],
+		speed: ["paused"]
 	}, 
 
 	"id19":{
@@ -157,14 +164,16 @@ var data = {
 		id: "McDonalds Filet-o-Fish Hook",
 		image_src: "img/mcdonalds-hook-final.gif",
 		movement: ["linear"],
-		looping: ["exit"]
+		looping: ["exit"],
+		speed: ["accelerated"]
 	}, 
 
 	"id20":{
 		num: "Image 20: ",
 		id: "McDonalds Loading",
 		image_src: "img/McDonalds-loading-final.gif",
-		movement: ["sequential"]
+		movement: ["sequential"],
+		speed: ["paused"]
 	}, 
 
 	"id21":{
@@ -188,7 +197,8 @@ var data = {
 		id: "On Button",
 		image_src: "img/on-final.gif",
 		movement: ["linear", "gradient"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["paused"]
 	}, 
 
 	"id24":{
@@ -196,14 +206,16 @@ var data = {
 		id: "Oreo Eyes",
 		image_src: "img/oreo-eyes-final.gif",
 		movement: ["linear"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["paused"]
 	}, 
 
 	"id25":{
 		num: "Image 25: ",
 		id: "Password",
 		image_src: "img/password-final.gif",
-		movement: ["sequential"]
+		movement: ["sequential"],
+		speed: ["paused"]
 	}, 
 
 	"id26":{
@@ -211,7 +223,8 @@ var data = {
 		id: "Period Pad Maze",
 		image_src: "img/period-pad-final.gif",
 		movement: ["linear"],
-		looping: ["infinite"]
+		looping: ["infinite"],
+		speed: ["accelerated"]
 	}, 
 
 	"id27":{
@@ -219,7 +232,8 @@ var data = {
 		id: "Sushi Logo",
 		image_src: "img/sushi-logo-final.gif",
 		movement: ["spin"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["paused"]
 	}, 
 
 	"id28":{
@@ -236,7 +250,8 @@ var data = {
 		id: "Trick-or-Treat",
 		image_src: "img/trick-or-treat-final.gif",
 		movement: ["linear"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["paused"]
 	}, 
 
 	"id30":{
@@ -253,7 +268,8 @@ var data = {
 		id: "Pen Crown",
 		image_src: "img/pen-crown-final.gif", 
 		movement: ["linear"],
-		looping: ["return"]
+		looping: ["return"],
+		speed: ["paused"]
 	}
 
 }

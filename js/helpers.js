@@ -548,6 +548,116 @@ var setActiveUniform = function(type){
 	loadDataUniform();
 }
 
+// Accelerated speed.
+function loadDataAccelerated(){
+
+	$("#homepage").hide(); // Hides homepage.
+	$("#parent").html(""); // Reset parent div.
+
+	var container_div = $("<div>");
+	$("#parent").append(container_div);
+
+	count = 0;
+
+	var row = $("<div>");
+	row.attr('class', "row");
+	$("row").html("");
+	$(container_div).append(row);
+
+	total = Object.keys(data).length;
+	currNum = 1;
+
+	for (d in data){
+		var item = data[d];
+
+		for (c in item['speed']){
+
+			if (item['speed'][c] == "accelerated"){
+				count++;
+				var container_div = $("<div id='item" + item['id'] +"' class='container_div'>");
+				var caption = item.num + item.id;
+				container_div.append("<br>" + caption + "<br>");
+				var image = $("<img style='width:60%'>").attr("src", item['image_src']);
+				container_div.append(image);
+
+				if (currNum <= total){
+					currNum++;
+					col = $("<div>");
+					col.attr("class", "col-md-4");
+
+					$(row).append(col);
+					$(col).html(container_div);
+
+				}
+			}
+		}
+	}
+
+	changeCount();
+
+}
+
+var setActiveAccelerated = function(type){
+	console.log("Accelerated speed is set active");
+	changeHeader('Accelerated Speed');
+	loadDataAccelerated();
+}
+
+// Paused speed.
+function loadDataPaused(){
+
+	$("#homepage").hide(); // Hides homepage.
+	$("#parent").html(""); // Reset parent div.
+
+	var container_div = $("<div>");
+	$("#parent").append(container_div);
+
+	count = 0;
+
+	var row = $("<div>");
+	row.attr('class', "row");
+	$("row").html("");
+	$(container_div).append(row);
+
+	total = Object.keys(data).length;
+	currNum = 1;
+
+	for (d in data){
+		var item = data[d];
+
+		for (c in item['speed']){
+
+			if (item['speed'][c] == "paused"){
+				count++;
+				var container_div = $("<div id='item" + item['id'] +"' class='container_div'>");
+				var caption = item.num + item.id;
+				container_div.append("<br>" + caption + "<br>");
+				var image = $("<img style='width:60%'>").attr("src", item['image_src']);
+				container_div.append(image);
+
+				if (currNum <= total){
+					currNum++;
+					col = $("<div>");
+					col.attr("class", "col-md-4");
+
+					$(row).append(col);
+					$(col).html(container_div);
+
+				}
+			}
+		}
+	}
+
+	changeCount();
+
+}
+
+var setActivePaused = function(type){
+	console.log("Paused speed is set active");
+	changeHeader('Paused');
+	loadDataPaused();
+}
+
 // Updates counter.
 var changeCount = function(){
 	$("#counter").empty();
