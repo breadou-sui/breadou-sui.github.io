@@ -24,29 +24,31 @@ function loadDataLinear(){
 	currNum = 1;
 
 	for (d in data){
-		
-		count++;
 		var item = data[d];
 
-		var container_div = $("<div id='item" + item['id'] +"' class='container_div'>");
-		var caption = item.num + item.id;
-		container_div.append("<br>" + caption + "<br>");
-		var image = $("<img style='width:60%'>").attr("src", item['image_src']);
-		container_div.append(image);
+		for (c in item['category']){
 
-		if (currNum <= total){
-			currNum++;
-			col = $("<div>");
-			col.attr("class", "col-md-4");
+			if (item['category'][c] == "linear"){
+				count++;
+				var container_div = $("<div id='item" + item['id'] +"' class='container_div'>");
+				var caption = item.num + item.id;
+				container_div.append("<br>" + caption + "<br>");
+				var image = $("<img style='width:60%'>").attr("src", item['image_src']);
+				container_div.append(image);
 
-			$(row).append(col);
-			$(col).html(container_div);
+				if (currNum <= total){
+					currNum++;
+					col = $("<div>");
+					col.attr("class", "col-md-4");
 
+					$(row).append(col);
+					$(col).html(container_div);
+
+				}
+			}
 		}
-
-
 	}
-
+	
 	changeCount();
 
 
