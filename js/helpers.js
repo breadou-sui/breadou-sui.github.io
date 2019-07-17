@@ -48,10 +48,8 @@ function loadDataLinear(){
 			}
 		}
 	}
-	
+
 	changeCount();
-
-
 
 }
 

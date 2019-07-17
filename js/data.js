@@ -38,7 +38,8 @@ var data = {
 	"id6":{
 		num: "Image 6: ",
 		id: "Fries Lighting",
-		image_src: "img/fries-lighting-final.gif"
+		image_src: "img/fries-lighting-final.gif",
+		category: ["sequential"]
 	},
 
 	"id7":{
@@ -79,7 +80,8 @@ var data = {
 	"id12":{
 		num: "Image 12: ",
 		id: "It Was Never a Dress",
-		image_src: "img/it-was-never-a-dress-final.gif"
+		image_src: "img/it-was-never-a-dress-final.gif",
+		category: ["sequential"]
 	},
 
 	"id13":{
@@ -99,7 +101,8 @@ var data = {
 	"id15":{
 		num: "Image 15: ",
 		id: "Kiwi Battery",
-		image_src: "img/kiwi-battery-final.gif"
+		image_src: "img/kiwi-battery-final.gif",
+		category: ["sequential"]
 	}, 
 
 	"id16":{
@@ -113,7 +116,7 @@ var data = {
 		num: "Image 17: ",
 		id: "Lipton Tea Sunrise",
 		image_src: "img/lipton-sunset-final.gif",
-		category: ["linear"]
+		category: ["linear", "gradient"]
 	}, 
 
 	"id18":{
@@ -133,13 +136,15 @@ var data = {
 	"id20":{
 		num: "Image 20: ",
 		id: "McDonalds Loading",
-		image_src: "img/mcdonalds-loading-final.gif"
+		image_src: "img/McDonalds-loading-final.gif",
+		category: ["sequential"]
 	}, 
 
 	"id21":{
 		num: "Image 21: ",
 		id: "McDonalds Wifi",
-		image_src: "img/mcdonalds-wifi-final.gif"
+		image_src: "img/mcdonalds-wifi-final.gif",
+		category: ["sequential"]
 	}, 
 
 	"id22":{
@@ -153,7 +158,7 @@ var data = {
 		num: "Image 23: ",
 		id: "On Button",
 		image_src: "img/on-final.gif",
-		category: ["linear"]
+		category: ["linear", "sequential"]
 	}, 
 
 	"id24":{
@@ -166,7 +171,8 @@ var data = {
 	"id25":{
 		num: "Image 25: ",
 		id: "Password",
-		image_src: "img/password-final.gif"
+		image_src: "img/password-final.gif",
+		category: ["sequential"]
 	}, 
 
 	"id26":{
@@ -186,7 +192,8 @@ var data = {
 	"id28":{
 		num: "Image 28: ",
 		id: "7-Eleven Traffic Light",
-		image_src: "img/traffic-light-final.gif"
+		image_src: "img/traffic-light-final.gif",
+		category: ["sequential"]
 	}, 
 
 	"id29":{
@@ -199,7 +206,8 @@ var data = {
 	"id30":{
 		num: "Image 30: ",
 		id: "Wasting Life",
-		image_src: "img/wasting-life-final.gif"
+		image_src: "img/wasting-life-final.gif",
+		category: ["expand"]
 	},
 
 	"id31":{
