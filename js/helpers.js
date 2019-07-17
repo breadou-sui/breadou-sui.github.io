@@ -5,12 +5,9 @@ $(document).ready(function(){
 	loadHome();
 });
 
-// Movement functions.
-
+// All movement functions.
+// Linear function.
 function loadDataLinear(){
-
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
 
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
@@ -61,10 +58,8 @@ var setActiveLinear = function(type){
 	loadDataLinear();
 }
 
+// Spin function.
 function loadDataSpin(){
-
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
 
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
@@ -115,10 +110,8 @@ var setActiveSpin = function(type){
 	loadDataSpin();
 }
 
+// Sequential function.
 function loadDataSequential(){
-
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
 
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
@@ -169,10 +162,8 @@ var setActiveSequential = function(type){
 	loadDataSequential();
 }
 
+// Gradient function.
 function loadDataGradient(){
-
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
 
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
@@ -223,10 +214,8 @@ var setActiveGradient = function(type){
 	loadDataGradient();
 }
 
+// Expand function.
 function loadDataExpand(){
-
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
 
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
@@ -277,10 +266,8 @@ var setActiveExpand = function(type){
 	loadDataExpand();
 }
 
+// Infinite looping function.
 function loadDataInfinite(){
-
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
 
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
@@ -333,9 +320,6 @@ var setActiveInfinite = function(type){
 
 function loadDataExit(){
 
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
-
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
 
@@ -387,9 +371,6 @@ var setActiveExit = function(type){
 
 function loadDataFade(){
 
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
-
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
 
@@ -440,9 +421,6 @@ var setActiveFade = function(type){
 }
 
 function loadDataReturn(){
-
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
 
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
@@ -496,9 +474,6 @@ var setActiveReturn = function(type){
 // Uniform speed.
 function loadDataUniform(){
 
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
-
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
 
@@ -551,9 +526,6 @@ var setActiveUniform = function(type){
 // Accelerated speed.
 function loadDataAccelerated(){
 
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
-
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
 
@@ -605,9 +577,6 @@ var setActiveAccelerated = function(type){
 
 // Paused speed.
 function loadDataPaused(){
-
-	$("#homepage").hide(); // Hides homepage.
-	$("#parent").html(""); // Reset parent div.
 
 	var container_div = $("<div>");
 	$("#parent").append(container_div);
@@ -666,14 +635,25 @@ var changeCount = function(){
 
 // Changes header.
 var changeHeader = function(name){
+	$("#homepage").hide(); // Hides homepage.
+	$("#movement-page").hide(); // Hides movement page.
+	$("#parent").html(""); // Reset parent div.
 	$("#header").empty();
 	$("#header").append(name);
 }
 
 // Loads homepage.
 var loadHome = function(){
+	$("#parent").html("");
 	$("#header").empty();
 	$("#counter").empty();
-	$("#parent").html("");
+	$("#movement-page").hide();
 	$("#homepage").show();
+}
+
+// Loads movement page. 
+function loadMovement(){
+	$("#homepage").hide();
+	$("#movement-page")[0].style.display = "block";
+	console.log("im here");
 }
