@@ -1,8 +1,8 @@
 body {
-/*  padding: 0;
+  padding: 0;
   margin: 0;
   text-align: center;
-  background: #f2f6e9;*/
+  background: #f2f6e9;
 }
 /*--- navigation bar ---*/
 .navbar {
@@ -49,14 +49,15 @@ body {
 }
 
 #counter{
-	text-align: center;
-	font-size: 1vw;
+	text-align: right;
+	font-size: 2vh;
 }
 
 #table{
 	margin: 0 auto;
 /*	margin-left: 5px;
 */}
+
 .button{
 	background-color: #bcdee0;
 	border: none;

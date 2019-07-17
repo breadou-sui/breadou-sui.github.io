@@ -20,12 +20,12 @@ function loadDataLinear(){
 	$("row").html("");
 	$(container_div).append(row);
 
-	console.log(Object.keys(data).length);
-
 	total = Object.keys(data).length;
 	currNum = 1;
 
 	for (d in data){
+		
+		count++;
 		var item = data[d];
 
 		var container_div = $("<div id='item" + item['id'] +"' class='container_div'>");
@@ -54,10 +54,9 @@ function loadDataLinear(){
 }
 
 var setActiveLinear = function(type){
-	console.log("setActiveLinear");
+	console.log("Linear is set active");
 	changeHeader('Linear');
 	loadDataLinear();
-
 }
 
 var changeCount = function(){
