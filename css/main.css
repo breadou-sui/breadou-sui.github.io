@@ -49,8 +49,8 @@ body {
 }
 
 #counter{
-	text-align: center;
-	font-size: 2vh;
+	text-align: right;
+	font-size: 1.5vw;
 }
 
 #table{
