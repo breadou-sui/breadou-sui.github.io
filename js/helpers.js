@@ -638,18 +638,20 @@ var changeHeader = function(name){
 	$("#homepage").hide(); // Hides homepage.
 	$("#movement-page").hide(); // Hides movement page.
 	$("#looping-page").hide(); // Hides looping page.
+	$("#speed-page").hide(); // Hides speed page.
 	$("#parent").html(""); // Reset parent div.
-	$("#header").empty();
+	$("#header").empty(); // Reset header. 
 	$("#header").append(name);
 }
 
 // Loads homepage.
 var loadHome = function(){
+	$("#movement-page").hide();
+	$("#looping-page").hide();
+	$("#speed-page").hide();
 	$("#parent").html("");
 	$("#header").empty();
 	$("#counter").empty();
-	$("#movement-page").hide();
-	$("#looping-page").hide();
 	$("#homepage").show();
 }
 
@@ -657,13 +659,22 @@ var loadHome = function(){
 function loadMovement(){
 	$("#homepage").hide();
 	$("#looping-page").hide();
+	$("#speed-page").hide();
 	$("#movement-page")[0].style.display = "block";
-	// console.log("im here");
 }
 
+// Loads looping page.
 function loadLooping(){
 	$("#homepage").hide();
 	$("#movement-page").hide();
+	$("speed-page").hide();
 	$("#looping-page")[0].style.display = "block";
-	// console.log("im here");
+}
+
+// Loads speed page. 
+function loadSpeed(){
+	$("#homepage").hide();
+	$("#movement-page").hide();
+	$("#looping-page").hide();
+	$("#speed-page")[0].style.display = "block";
 }
