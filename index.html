@@ -1,180 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <title>Annie's Animations</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/c32420ffb1.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<link rel="stylesheet" href="css/main.css">
 
-  <script type="text/javascript" src="js/data.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="js/helpers.js"></script> 
 
 </head>
+<body>
 
-<body style=""> 
-  <div class="container"> 
-    <div class="page-header">
-      <h1 id="header"></h1> 
-      <h2 id="counter"></h2>
-    </div>
-  </div>
+<div id="parent">
+<div class="homepage">
 
-	<!-- Navigation Bar -->
-	<nav class="navbar navbar-expand-md fixed-top">
-    <div class="container-fluid">
-  <a class="navbar-brand" href="#" onclick="loadHome()">Home</a>
-  <button class="navbar-toggler navbar-dark" id="toggle" type="button" data-toggle="collapse" data-target="#main-navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="main-navigation">
-    <ul class="navbar-nav">
-
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movement</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#" onclick="setActiveLinear('Linear')">Linear</a> 
-          <a class="dropdown-item" href="#" onclick="setActiveSpin('Spin')">Spin</a>
-          <a class="dropdown-item" href="#" onclick="setActiveSequential('Sequential')">Sequential</a>
-          <a class="dropdown-item" href="#" onclick="setActiveGradient('Gradient')">Gradient</a>
-          <a class="dropdown-item" href="#" onclick="setActiveExpand('Expand')">Expand</a>
-        </div> 
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Looping</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#" onclick="setActiveInfinite('Infinite')">Infinite</a> 
-          <a class="dropdown-item" href="#" onclick="setActiveExit('Exit')">Exit the Frame</a>
-          <a class="dropdown-item" href="#" onclick="setActiveFade('Fade')">Fade</a>
-          <a class="dropdown-item" href="#" onclick="setActiveReturn('Return')">Return Position</a>
-        </div> 
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Speed</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#" onclick="setActiveUniform('Uniform Speed')">Uniform</a>
-          <a class="dropdown-item" href="#" onclick="setActiveAccelerated('Accelerated')">Accelerated</a>
-          <a class="dropdown-item" href="#" onclick="setActivePaused('Paused')">Paused</a>
-        </div> 
-      </li>
-
-    </ul>
+<!-- First Image -->
+<div class="background_image_1">
+  <div class="middle_formatting" style="white-space: nowrap;">
+    <span class="name_btn animate-opacity">ANNIE SUI<span class="hide_small"></span></span>
   </div>
 </div>
-</nav>
 
-<div id="parent"></div> 
-  <div class="container">
-  </div>
+<div class="about">
+  <h2>ABOUT ME</h2>
+  <p class="intro"><em>Curious. Methodical. Goal-oriented.</em></p>
+  <p class="intro">Hi there! I'm Annie, a rising sophomore majoring in Computer Science at Columbia University. I'm currently working at Prof. Lydia Chilton's lab under Columbia's CS Department. My interests include UI/UX design, software development, and animation.</p>  
 
-<!-- Homepage -->
-    <div id = "homepage" href="#">
-    	<h1 id="title"> Annie-mation Categorization</h1>
-    	<h3 id="subtitle"> Annie Sui, Prof. Lydia Chilton</h3>
+<a href="/Users/breadou/portfolio/img/resume.pdf" download>
+  <button class="resume_btn" download>Resume</button>
+</a>
 
-      <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <center><button class="button" onclick="loadMovement()">Movement</button></center>
-          <center><img src="img/ibm-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-4">
-          <center><button class="button" onclick="loadLooping()">Looping</button></center>
-          <center><img src="img/lego-plane-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-4">
-          <center><button class="button" onclick="loadSpeed()">Speed</button></center>
-          <center><img src="img/mcdonalds-hook-final.gif" img style='width: 80%'></center>
-        </div>
-      </div>
-    </div>
-    </div>
+  <hr class="resume_separator">
 
-    <!-- Movement Page -->
-    <div id = "movement-page" href="#" style="display: none">
-      <h1 id="title">Movement</h1>
-      <h3 id="subtitle">Click on a movement category below!</h3>
-      
-      <div class="container">
-      <div class="row">
-        <div class="col-md-5ths">
-          <center><button class="button" onclick="setActiveLinear('Linear')">Linear</button></center>
-          <center><img src="img/ibm-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-5ths">
-          <center><button class="button" onclick="setActiveSpin('Spin')">Spin</button></center>
-          <center><img src="img/feminism-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-5ths">
-          <center><button class="button" onclick="setActiveSequential('Sequential')">Sequential</button></center>
-          <center><img src="img/traffic-light-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-5ths">
-          <center><button class="button" onclick="setActiveGradient('Gradient')">Gradient</button></center>
-          <center><img src="img/fries-lighting-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-5ths">
-          <center><button class="button" onclick="setActiveExpand('Expand')">Expand</button></center>
-          <center><img src="img/wasting-life-final.gif" img style='width: 80%'></center>
-        </div>
-      </div>
-    </div>
-    </div> 
+</div>
 
-<!-- Looping Page -->
-    <div id = "looping-page" href="#" style="display: none">
-      <h1 id="title"> Looping</h1>
-      <h3 id="subtitle">Click on a looping category below!</h3>
+<!-- (Portfolio Section) -->
+<div id="portfolio">
+<div>
+  <h2>Portfolio</h2>
+  <h3>My Animations</h3>
+  <p>I animate visual blends—creative ads that combine two concepts to convey a message. Below are some samples of my work.</p>
+</div>
 
-      <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <center><button class="button" onclick="setActiveInfinite('Infinite')">Infinite</button></center>
-          <center><img src="img/ibm-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-3">
-          <center><button class="button" onclick="setActiveExit('Exit')">Exit</button></center>
-          <center><img src="img/mcdonalds-easter-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-3">
-          <center><button class="button" onclick="setActiveFade('Fade')">Fade</button></center>
-          <center><img src="img/gillette-shaving-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-3">
-          <center><button class="button" onclick="setActiveReturn('Return')">Return</button></center>
-          <center><img src="img/heinz-onion-rings-final.gif" img style='width: 80%'></center>
-        </div>
-      </div>
-    </div>
-    </div>
+<!-- container with animation images -->
+<div class='container'>
+<!-- row containing animation images -->
+<div class='row'> 
 
-<!-- Speed page -->
-    <div id = "speed-page" href="#" style="display: none">
-      <h1 id="title">Speed</h1>
-      <h3 id="subtitle">Click on a speed category below!</h3>
+<!-- IBM image -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="animation" src="img/ibm-final.gif"> <a class="overlay">
+	<div class="text">
+		<p class="title">IBM Food Preparation for Space</p>
+		<div class="divider">
+		</div>
+		<p class="sub-title">Astronaut + Egg</p>
+	</div></a>
+</div>
 
-      <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <center><button class="button" onclick="setActiveUniform()">Uniform</button></center>
-          <center><img src="img/heinz-balloon-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-4">
-          <center><button class="button" onclick="setActiveAccelerated()">Accelerated</button></center>
-          <center><img src="img/mcdonalds-hook-final.gif" img style='width: 80%'></center>
-        </div>
-        <div class="col-md-4">
-          <center><button class="button" onclick="setActivePaused()">Paused</button></center>
-          <center><img src="img/pen-crown-final.gif" img style='width: 80%'></center>
-        </div>
-      </div>
-    </div>
-    </div>
+<!-- McDonalds Filet-o-Fish Hook image -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="animation" src="img/mcdonalds-hook-final.gif"> <a class="overlay">
+	<div class="text">
+		<p class="title">Filet-o-Fish</p>
+		<div class="divider">
+		</div>
+		<p class="sub-title">McDonalds + Hook</p>
+	</div></a>
+</div>
 
-<script type="text/javascript" src="js/helpers.js"></script>  
+<!-- McDonalds McMuffin image -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="animation" src="img/mcdonalds-mcmuffin-final.gif"> <a class="overlay">
+	<div class="text">
+		<p class="title">McDonalds McMuffin</p>
+		<div class="divider">
+	</div>
+		<p class="sub-title">McMuffin + Cup</p>
+	</div></a>
+</div>
 
+<!-- Lego Plane image -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="animation" src="img/lego-plane-final.gif"> <a class="overlay">
+	<div class="text">
+		<p class="title">Legos Inspire Imagination</p>
+		<div class="divider">
+	</div>
+		<p class="sub-title">Lego + Plane</p>
+	</div></a>
+</div>
+
+<!-- Period Pad image -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="animation" src="img/period-pad-final.gif"> <a class="overlay">
+	<div class="text">
+		<p class="title">Always Period Pad</p>
+		<div class="divider">
+		</div>
+		<p class="sub-title">Pad + Maze</p>
+	</div></a>
+</div>
+
+<!-- KFC Opening Soon image -->
+<!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="image" src="img/KFC-opening-soon-wiggle-final.gif"> <a class="overlay">
+	<div class="text">
+		<p class="title">KFC Opening Soon</p>
+		<div class="divider">
+		</div>
+		<p class="sub-title">KFC + Egg</p>
+	</div></a>
+</div> -->
+
+<!-- Ketchup Gaming image -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="animation" src="img/ketchup-gaming-final.gif"> <a class="overlay">
+	<div class="text">
+		<p class="title">Heinz Shoot 'Em Up</p>
+		<div class="divider">
+		</div>
+		<p class="sub-title">Heinz + Video Game</p>
+	</div></a>
+</div>
+
+<!-- Lipton Sunrise image -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="animation" src="img/lipton-sunset-final.gif"> <a class="overlay">
+	<div class="text">
+		<p class="title">Lipton Wakes You Up</p>
+		<div class="divider">
+		</div>
+		<p class="sub-title">Lipton + Sun</p>
+	</div></a>
+</div>
+
+<!-- Nivea image -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="animation" src="img/nivea-night-cream-final.gif"> <a class="overlay">
+	<div class="text">
+		<p class="title">Nivea Night Cream</p>
+		<div class="divider">
+		</div>
+		<p class="sub-title">Lipton + Moon</p>
+	</div></a>
+</div>
+
+<!-- End of animation image row -->
+</div> 
+<!-- End of animation container -->
+</div>
+
+<div>
+	<a class="see_more">See more of my animations </a><a class="see_more" href="http://www.columbia.edu/~aqs2104/">here!</a>
+</div>
+<div>
+	<a class="see_more">How It's Made: Read my </a><a class="see_more" href="https://medium.com/@visiblends">blog posts!</a> <i class="fab fa-medium"></i>
+</div>
+<div>
+	<a class="see_more">Check out my lab group's </a><a class="see_more" href="https://www.facebook.com/visiblends/">Facebook webpage!</a> <i class="fab fa-facebook-square"></i>
+</div>
+
+<hr class="separator">
+
+<div>
+  <h3>My Designs</h3>
+  <p>SpineAlign UI Design: 1st Place Award at DevFest 2019 (made with Sketch)</p>
+</div>
+
+<!-- container with SpineAlign images -->
+<div class='container'>
+<!-- row containing SpineAlign images -->
+<div class='row'> 
+
+<!-- SpineAlign homescreen -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="image" src="img/homescreen.jpg"> 
+</div>
+
+<!-- SpineAlign instructions-1 -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="image" src="img/instructions-1.jpg"> 
+</div>
+
+<!-- SpineAlign instructions-2 -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="image" src="img/instructions-2.jpg"> 
+</div>
+
+<!-- SpineAlign diagnosis -->
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+	<img class="image" src="img/scoliosis-1.jpg"> 
+</div>
+
+<!-- End of SpineAlign row -->
+</div>
+<!-- End of SpineAlign container -->
+</div>
+
+<hr class="separator">
+
+<p><i>Burkholderia cenocepacia</i> Mechanism of Infection (made with Google Drawings)</p>
+
+<!-- Container with science diagram -->
+<div class='container'>
+	<div class="diagram">
+		<img class="bacteria" src="img/infection.png"> 
+	</div>
+</div>
+
+<p class="keep_in_touch">Like my work? Let's keep in touch.</p>
+
+<div class='container'>
+	<div class="social_media_icons">
+		<a class="btn" href="https://www.facebook.com/gotbreadou" role="button"><i class="fab fa-facebook"></i></a>
+		<a class="btn" href="https://github.com/breadou-sui" role="button"><i class="fab fa-github"></i></a>
+		<a class="btn" href="https://www.instagram.com/gotbreadou/" role="button"><i class="fab fa-instagram"></i></a>
+		<a class="btn" href="https://www.linkedin.com/in/gotbreadou/" role="button"><i class="fab fa-linkedin"></i></i></a>
+	</div>
+</div>
+
+<div class="background_image_2"></div>
+<!-- End of parent -->
+</div> 
 </body>
 </html>
