@@ -147,7 +147,7 @@
 .background_image_1{
   display: flex;
   justify-content: center !important;
-  background-image: url('../img/background-copy.jpg');
+  background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
